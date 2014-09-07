@@ -15,10 +15,10 @@ namespace nexxes\tokenizer;
  * @author Dennis Birkholz <dennis.birkholz@nexxes.net>
  */
 class Token {
-	const WHITESPACE = "Token_Whitespace";
-	const NEWLINE = "Token_Newline";
-	const TEXT = "Token_Text";
-	const BLANKLINE = "Token_Blankline";
+	const WHITESPACE = 1;
+	const NEWLINE = 2;
+	const TEXT = 3;
+	const BLANKLINE = 4;
 	const ESCAPED = 5;
 	
 	const MINUS = 100;
