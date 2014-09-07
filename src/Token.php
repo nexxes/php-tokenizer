@@ -91,4 +91,16 @@ class Token {
 		$this->raw = $raw;
 		$this->length = \strlen($this->raw);
 	}
+	
+	public static function typeName($tokenType) {
+		$reflectionClass = new \ReflectionClass(static::class);
+		
+		foreach ($reflectionClass->getConstants() AS $constantName => $constantValue) {
+			if ($tokenType === $constantValue) {
+				return $constantName;
+			}
+		}
+		
+		return 'UNKNOWN';
+	}
 }
