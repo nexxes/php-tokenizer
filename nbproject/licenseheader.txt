@@ -1,0 +1,8 @@
+/*
+ * This file is part of the nexxes/tokenizer package.
+ * It is licenced under the terms of the LGPL v3 or later.
+ * 
+ * Copyright 2014 Dennis Birkholz <dennis.birkholz@nexxes.net>.
+ * 
+ * More information can be found in the LICENSE file.
+ */

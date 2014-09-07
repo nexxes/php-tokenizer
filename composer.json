@@ -1,6 +1,9 @@
 {
-	"name": "nexxes/commonmark",
-	"description": "PHP Parser for Common Mark",
+	"name": "nexxes/tokenizer",
+	"description": "Simple tokenizer to split a character steam (text) into character classes (tokens) written in PHP",
+	"keywords": ["parser", "token", "tokenizer"],
+	"license": "LGPL-3.0",
+	"homepage": "https://github.com/nexxes/php-tokenizer",
 	
 	"authors": [
 		{
@@ -11,10 +14,11 @@
 	
 	"autoload": {
 		"psr-4": {
-			"nexxes\\cm\\": "src/"
+			"nexxes\\tokenizer\\": "src/"
 		}
 	},
 	
-	"homepage": "http://getbootstrap.com",
-	"license": "MIT"
+	"require": {
+		"php": ">=5.4.0"
+	}
 }
