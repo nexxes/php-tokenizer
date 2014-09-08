@@ -93,7 +93,7 @@ class Token {
 	}
 	
 	public static function typeName($tokenType) {
-		$reflectionClass = new \ReflectionClass(static::class);
+		$reflectionClass = new \ReflectionClass(\get_class($this));
 		
 		foreach ($reflectionClass->getConstants() AS $constantName => $constantValue) {
 			if ($tokenType === $constantValue) {
