@@ -27,8 +27,8 @@ class TokenizerTest extends \PHPUnit_Framework_TestCase {
 	private function callPrivate($method, $text, $reference = false) {
 		$tokenizer = new Tokenizer("");
 		
-		$reflectionClass = new \ReflectionClass(Tokenizer::class);
-		$exec = $reflectionClass->getMethod($method);
+		$reflectionObject = new \ReflectionObject($tokenizer);
+		$exec = $reflectionObject->getMethod($method);
 		$exec->setAccessible(true);
 		
 		if ($reference) {
