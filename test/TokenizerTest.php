@@ -69,7 +69,8 @@ class TokenizerTest extends \PHPUnit_Framework_TestCase {
 			[ 'tokenizeUnderscore', '_', Token::UNDERSCORE ],
 		];
 		
-		foreach ($tests AS list($method, $text, $tokenType)) {
+		foreach ($tests AS $test) {
+			list($method, $text, $tokenType) = $test;
 			$tokens = $this->callTokenizer($method, $text);
 			
 			$this->assertCount(1, $tokens, 'Token missing, method: ' . $method);
